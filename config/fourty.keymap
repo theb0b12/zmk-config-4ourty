@@ -30,7 +30,7 @@
         };
 
         bracket2 {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20>;
             layers = <0>;
         };
@@ -63,10 +63,10 @@
 
         num {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6     &kp N7     &kp N8         &kp N9     &kp N0  &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans  &trans
-&trans  &trans  &trans          &trans                     &trans     &trans         &trans     &trans  &trans
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6     &kp N7     &kp N8         &kp N9     &kp N0  &kp DEL
+&kp TAB    &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp GRAVE  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS   &kp PIPE       &kp TILDE  &trans  &trans
+&kp LCTRL  &trans  &trans          &trans                     &trans     &trans         &trans     &trans  &trans
             >;
         };
     };
