@@ -62,8 +62,18 @@
             bindings = <
 &kp ESC    &kp Q     &kp W  &kp E  &kp R      &kp T  &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BACKSPACE
 &kp TAB    &kp A     &kp S  &kp D  &kp F      &kp G  &kp H  &kp J      &kp K      &kp L     &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z     &kp X  &kp C  &kp V      &kp B  &kp N  &kp M      &kp COMMA  &kp DOT   &kp UP    &tog 3
-&kp LCTRL  &kp LGUI  &mo 1         &kp ENTER                &kp SPACE  &mo 2      &kp LEFT  &kp DOWN  &kp RIGHT
+&kp LSHFT  &kp Z     &kp X  &kp C  &kp V      &kp B  &kp N  &kp M      &kp COMMA  &kp DOT   &kp UP    &tog 1
+&kp LCTRL  &kp LGUI  &mo 2         &kp ENTER                &kp SPACE  &mo 3      &kp LEFT  &kp DOWN  &kp RIGHT
+            >;
+        };
+
+        game {
+            display-name = "game";
+            bindings = <
+&kp ESC    &kp Q     &kp W         &kp E  &kp R      &kp T  &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB    &kp A     &kp S         &kp D  &kp F      &kp G  &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z     &kp X         &kp C  &kp V      &kp B  &kp N  &kp M  &kp COMMA  &kp DOT   &kp UP    &to 0
+&kp LCTRL  &kp LGUI  &kp LEFT_ALT         &kp SPACE                &mo 2  &mo 3      &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
@@ -80,18 +90,17 @@
             bindings = <
 &kp ESC    &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS   &kp STAR   &trans    &trans     &kp DEL
 &kp TAB    &trans    &trans  &trans    &trans      &trans       &trans     &kp MINUS  &kp EQUAL  &kp BSLH  &kp GRAVE  &trans
-&kp LSHFT  &trans    &trans  &trans    &trans      &trans       &trans     &kp UNDER  &kp PLUS   &kp PIPE  &kp TILDE  &trans
+&kp LSHFT  &trans    &trans  &trans    &trans      &trans       &trans     &kp UNDER  &kp PLUS   &kp PIPE  &kp TILDE  &mo 4
 &kp LCTRL  &trans    &trans            &trans                              &trans     &trans     &trans    &trans     &trans
             >;
         };
 
-        game {
-            display-name = "game";
+        fn {
             bindings = <
-&kp ESC    &kp Q     &kp W         &kp E  &kp R      &kp T  &kp Y  &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A     &kp S         &kp D  &kp F      &kp G  &kp H  &kp J  &kp K      &kp L     &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z     &kp X         &kp C  &kp V      &kp B  &kp N  &kp M  &kp COMMA  &kp DOT   &kp UP    &to 0
-&kp LCTRL  &kp LGUI  &kp LEFT_ALT         &kp SPACE                &mo 1  &mo 2      &kp LEFT  &kp DOWN  &kp RIGHT
+&kp ESC    &kp F1   &kp F2   &kp F3   &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp DEL
+&kp TAB    &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&kp LSHFT  &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&kp LCTRL  &trans   &trans            &trans                  &trans  &trans  &trans  &trans   &trans
             >;
         };
     };
