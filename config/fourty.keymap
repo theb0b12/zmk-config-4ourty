@@ -8,31 +8,31 @@
         slash-questionmark {
             bindings = <&kp SLASH>;
             key-positions = <33 32>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         par1 {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         par2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         bracket1 {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 15>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         bracket2 {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         bracket3 {
@@ -44,13 +44,19 @@
         bracket4 {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         quotes {
             bindings = <&kp SQT>;
             key-positions = <21 22>;
-            layers = <0>;
+            layers = <0 1>;
+        };
+
+        mc-game {
+            bindings = <&to 2>;
+            key-positions = <33 35>;
+            layers = <0 1>;
         };
     };
 
@@ -63,7 +69,7 @@
 &kp ESC    &kp Q     &kp W  &kp E  &kp R      &kp T  &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BACKSPACE
 &kp TAB    &kp A     &kp S  &kp D  &kp F      &kp G  &kp H  &kp J      &kp K      &kp L     &kp SEMI  &kp ENTER
 &kp LSHFT  &kp Z     &kp X  &kp C  &kp V      &kp B  &kp N  &kp M      &kp COMMA  &kp DOT   &kp UP    &tog 1
-&kp LCTRL  &kp LGUI  &mo 2         &kp ENTER                &kp SPACE  &mo 3      &kp LEFT  &kp DOWN  &kp RIGHT
+&kp LCTRL  &kp LGUI  &mo 3         &kp ENTER                &kp SPACE  &mo 4      &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
@@ -73,7 +79,17 @@
 &kp ESC    &kp Q     &kp W         &kp E  &kp R      &kp T  &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A     &kp S         &kp D  &kp F      &kp G  &kp H  &kp J      &kp K      &kp L     &kp DEL   &kp ENTER
 &kp LSHFT  &kp Z     &kp X         &kp C  &kp V      &kp B  &kp N  &kp M      &kp COMMA  &kp DOT   &kp UP    &to 0
-&kp LCTRL  &kp LGUI  &kp LEFT_ALT         &kp SPACE                &kp SPACE  &mo 2      &kp LEFT  &kp DOWN  &kp RIGHT
+&kp LCTRL  &kp LGUI  &kp LEFT_ALT         &kp SPACE                &kp SPACE  &mo 3      &kp LEFT  &kp DOWN  &kp RIGHT
+            >;
+        };
+
+        mc-game {
+            display-name = "game";
+            bindings = <
+&kp ESC    &kp Q     &kp W  &kp E  &kp R      &kp T  &kp Y  &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB    &kp A     &kp S  &kp D  &kp F      &kp G  &kp H  &kp J      &kp K      &kp L     &kp DEL   &kp ENTER
+&kp LSHFT  &kp Z     &kp X  &kp C  &kp V      &kp B  &kp N  &kp M      &kp COMMA  &kp DOT   &kp UP    &to 0
+&kp LCTRL  &kp LGUI  &mo 3         &kp SPACE                &kp SPACE  &mo 4      &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
@@ -90,7 +106,7 @@
             bindings = <
 &kp ESC    &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPS   &kp STAR   &trans    &trans     &kp DEL
 &kp TAB    &trans    &trans  &trans    &trans      &trans       &trans     &kp MINUS  &kp EQUAL  &kp BSLH  &kp GRAVE  &trans
-&kp LSHFT  &trans    &trans  &trans    &trans      &trans       &trans     &kp UNDER  &kp PLUS   &kp PIPE  &kp TILDE  &mo 4
+&kp LSHFT  &trans    &trans  &trans    &trans      &trans       &trans     &kp UNDER  &kp PLUS   &kp PIPE  &kp TILDE  &mo 5
 &kp LCTRL  &trans    &trans            &trans                              &trans     &trans     &trans    &trans     &trans
             >;
         };
